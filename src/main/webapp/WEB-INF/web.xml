@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+        <servlet>
+		<servlet-name>userInsert</servlet-name>
+		<servlet-class>com.game.UserInsert</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>userInsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>gameInsert</servlet-name>
+		<servlet-class>com.game.GameInsert</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>gameInsert</servlet-name>
+		<url-pattern>/gameinsert</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>searchControl</servlet-name>
+		<servlet-class>com.game.SearchControl</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>searchControl</servlet-name>
+		<url-pattern>/search</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>updateGame</servlet-name>
+		<servlet-class>com.game.UpdateGameServelet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>updateGame</servlet-name>
+		<url-pattern>/update</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>deleteGame</servlet-name>
+		<servlet-class>com.game.DeleteGameServelet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>deleteGame</servlet-name>
+		<url-pattern>/delete</url-pattern>
+		</servlet-mapping>
+		
+</web-app>
